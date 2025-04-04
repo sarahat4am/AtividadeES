@@ -14,12 +14,19 @@ public int somar() {
 return this.numero1 + this.numero2;
 }
 
+ public int subtrair() {
+        return this.numero1 - this.numero2;
+    }
+
 public static void main(String[] args) {
 
 Main calculadora = new Main(5, 3);
 
+int resultadoSoma = calculadora.somar();
+System.out.println("A soma de " + calculadora.numero1 + " e " + calculadora.numero2 + " é: " + resultadoSoma);
 
-int resultado = calculadora.somar();
-System.out.println("A soma de " + calculadora.numero1 + " e " + calculadora.numero2 + " é: " + resultado);
+int resultadoSubtracao = calculadora.subtrair();
+System.out.println("A subtração de " + calculadora.numero1 + " e " + calculadora.numero2 + " é: " + resultadoSubtracao);
+
     }
 }
